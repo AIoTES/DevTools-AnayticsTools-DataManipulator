@@ -14,6 +14,9 @@
 	<script src="js/d3.v5.min.js"></script>
 	<script src="js/script.js"></script>
 	
+	<script src="https://cdn.jsdelivr.net/npm/handsontable-pro@5.0.2/dist/handsontable.full.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/handsontable-pro@5.0.2/dist/handsontable.full.min.css" rel="stylesheet" media="screen">
+	
 	<style>
 		.logo {
 			height: 60px;
@@ -52,8 +55,11 @@
 			</div>
 		</div>
 		<div style="margin-left: 260px;">
-			<div class="w3-container w3-padding-16">
-				<table id="dataTable" class="display" width="100%"></table>
+			<div class="w3-container w3-padding-16" id="resultsDiv" style="visibility: hidden;">
+				<!-- <table id="dataTable" class="display" width="100%"></table> -->
+				<div id="example1"></div>
+				<button id="export-file-csv" class="intext-btn w3-button w3-green w3-left-align">Export CSV</button>
+				<button id="export-file-json" class="intext-btn w3-button w3-green w3-left-align">Export JSON</button>
 			</div>
 		</div>
 	</div>
