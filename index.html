@@ -22,6 +22,9 @@
 			height: 60px;
 			margin-bottom: 5px;
 		}
+		.exprBox {
+			font-family: 'Consolas', 'Courier New', Courier, monospace
+		}
 	</style>
 </head>
 
@@ -56,10 +59,18 @@
 		</div>
 		<div style="margin-left: 260px;">
 			<div class="w3-container w3-padding-16" id="resultsDiv" style="visibility: hidden;">
-				<!-- <table id="dataTable" class="display" width="100%"></table> -->
 				<div id="example1" class="hot handsontable htRowHeaders htColumnHeaders"></div>
-				<button id="export-file-csv" class="intext-btn w3-button w3-green w3-left-align">Export CSV</button>
-				<button id="export-file-json" class="intext-btn w3-button w3-green w3-left-align">Export JSON</button>
+				<div>
+					Add new column <br>
+					Name: <input type="text" id="colNameTextBox" />
+					Expression: <input type="text" id="colExprTextBox" class="exprBox" />
+					<button onclick="addColumn('colNameTextBox', 'colExprTextBox')">Add</button>
+				</div>
+				<div id="addedColumnsDiv"></div>
+				<div style="margin-top: 10px;">
+					<button id="export-file-csv" class="intext-btn w3-button w3-green w3-left-align">Export CSV</button>
+					<button id="export-file-json" class="intext-btn w3-button w3-green w3-left-align">Export JSON</button>
+				</div>
 			</div>
 		</div>
 	</div>
