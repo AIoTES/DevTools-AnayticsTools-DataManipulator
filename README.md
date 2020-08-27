@@ -30,3 +30,7 @@ The following example shows how to create new columns in the loaded dataset, com
 * Add another column named `diff`, with expression `Math.abs(x - y)`. This is the absolute difference between "x" and "y".
 * Click the "Remove" button next to the "avg" column details, to remove the "avg" column from the spreadsheet.
 * Click the "Export CSV" button to export the shown data, including the displayed computed columns, in CSV format.
+
+## License
+
+The software is licensed under The MIT License (MIT).
